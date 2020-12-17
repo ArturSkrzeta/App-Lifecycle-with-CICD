@@ -88,8 +88,8 @@
 
 										<h5>Continuous testing:</h5>
 										<ul>
-											<li>Using special frameworks to perform auotmated tests.</li>
-											<li>Testing app or its fragments if they work properly due to assumptions.</li>
+											<li>Every time there is a commit from a developer, the app is being pulled from Version Control System, built and tested out using automated tests.</li>
+											<li>The App or its fragments undergoes tests if they work properly due to the set of assumptions.</li>
 											<li>The most important test is regression testing of whole application in the context of provided changes.</li>
 											<li>Regression testing is basically re-running functional and non-functional tests on the application in order to make sure that recently developed and tested software still performs after a change. If test fails then we have a regression.</li>
 											<li>The best practice is to perform regression tests in local environment before pushing application into a remote repository.</li>
@@ -135,10 +135,39 @@
 								<div class="container">
 									<h3>Demo</h3>
 
-									<h5>Jenkins:</h5>
+									<h5>Jenkins Pipeline:</h5>
 									<ul>
 									  <li>One of the best open source tool for CICD is Jenkins.</li>
 										<li>Jenkins handles anything from a simple CI server to a complete CD hub.</li>
+										<li>Instead of having multiple processes chained together we can put enite workflow in the Jenkins Pipeline.</li>
+										<li>Jenkins Pipeline runs entire job as a code written in one script in Jenkinsfile</li>
+										<li>Piepeline as a code:
+											<br>
+											- coding all jobs in one script,<br>
+											- can be check in Version Control System,<br>
+											- takes user input to interact with the pipeline,<br>
+											- saving checkpoint to start from instead of redoing all work from 0,<br>
+											- jobs are bing run in parallel,<br>
+											- can integrate other plugins like Git, Docker,<br>
+											- syntax enriched with conditional loops.
+										</li>
+									</ul>
+
+									<h5>Jenkinsfile:</h5>
+									<ul>
+										<li>Text file stroring pipeline as a code.</li>
+										<li>Written using Groovy Domain Specific Language.</li>
+										<li>Can be written in two ways: <b>declarative pipeline</b> or <b>scripted pipeline</b></li>
+										<li>Declarative pipeline:
+											<br>
+											- code can be writeen locally in a file and pushed to Source Control Management system,<br>
+											- code defined within a pipeline block.
+										</li>
+										<li>Scripted pipeline:
+											<br>
+											- traditional way where code is written in Jenkins UI,<br>
+											- code diefined within a node block.
+										</li>
 									</ul>
 
 								</div>
