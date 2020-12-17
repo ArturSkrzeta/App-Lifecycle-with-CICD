@@ -50,47 +50,58 @@
 										<h3>Intro</h3>
 
 										<p>CICD is a set of rules, requirements, good practicies and tools for working on software projects.
-												Thanks to CICD, dev team is able assure frequent delivery of certain and tested changes to the code.<br>
-												<br>
-												Modern CICD solutions provide:<br>
-												- continuous integration,<br>
-												- continuous testing,<br>
-												- continuous delivery,<br>
-												- continuous deployment,<br>
-												- continuous monitoring<br>
-												through entire software development lifecycle.<br>
+												Using this methodology, dev team is able assure frequent delivery of tested changes to the code.<br>
 												<br>
 												CICD is a compromise betweem developers who want to make changes to the code frequently and server admins whose aim is to keep server and application stable.
-												Therefore, CICD ensures easiness of code changes with app stability simultaneously. Automation of delivering changes to the code and automated testing make process of deploying changes to the server fast and reliable.
+												Therefore, CICD ensures easiness of code changes with app stability simultaneously.
+												Automation of changes delivery to the code and automated testing make process of deploying changes to production fast and reliable.
 										</p>
 
-										<h5>Continuous Integration:</h5>
+										<h5>Modern CICD provides solutions through entire software development lifecycle:</h5>
 										<ul>
-											<li>Most of modern apps requires different techonologies when creating a code. This is why dev teams need a mechinizm for integrating an compiling the application.</li>
-										  <li>A good practice is when developers commit their code to version repository frequently - at least one time per day.</li>
-											<li>That smmall chunks of codes are much easier to analyze and debug as opposed to a big block of code.</li>
+											<li>continuous integration,</li>
+											<li>continuous testing,</li>
+											<li>continuous delivery,</li>
+											<li>continuous deployment,</li>
+											<li>continuous monitoring.</li>
 										</ul>
 
-										<h5>Continuous Testing:</h5>
+										<h5>Continuous integration:</h5>
+										<ul>
+											<li>Most of modern apps requires different techonologies during development. In addition, multiple developers work simultaneously on different features of the same app. This is why dev teams need a mechinizm for code integration and app compilation.</li>
+										  <li>A good practice is when developers commit their changes to a version repository frequently - at least one time per day.</li>
+											<li>These small chunks of code are much easier to analyze, debug and test it out with unit and integration testing, as opposed to a big block of code.</li>
+											<li>Successfully performed CI means new code changes to an app are regularly built, tested, and merged to a shared repository.</li>
+											<li>This is a solution to a common problem of having too many branches of an app from different developers at once which may lead into a confilct.</li>
+										</ul>
+
+										<h5>Continuous testing:</h5>
 										<ul>
 											<li>Using special frameworks to perform auotmated tests.</li>
 											<li>Testing app or its fragments if they work properly due to assumptions.</li>
 											<li>The most important test is regression testing of whole application in the context of provided changes.</li>
 											<li>Regression testing is basically re-running functional and non-functional tests on the application in order to make sure that recently developed and tested software still performs after a change. If test fails then we have a regression.</li>
-											<li>The best practice is to perform regression tests in local environment before commiting application into remote repository.</li>
+											<li>The best practice is to perform regression tests in local environment before pushing application into a remote repository.</li>
 										</ul>
 
-										<h5>Continuous Delivery:</h5>
+										<h5>Continuous delivery:</h5>
 										<ul>
-											<li>It comes when app built, validated and tested out to release the code to a remote repository.</li>
-											<li>It automates process of providing app and inserting code changes into repository.</li>
-											<li>It just makes sure that the app is alwyas in a production-ready state - always ready to be released.</li>
-											<li>Teams, using clodud solutions, deliver their app in containerizated form with Docker or Kubernetes.</li>
+											<li>It comes when app built, validated and tested out to release the code to a remote repository (like GitHub or a container registry).</li>
+											<li>It just makes sure that the app is alwyas in a production-ready state - always ready to be released to a production environment.</li>
+											<li>In ensures smooth and clear communication and workflow between dev teams and operations teams.</li>
+											<li>Teams, using cloud solutions, deliver their app with containerizated by Docker or Kubernetes form.</li>
 										</ul>
 
-										<h5>Continuous Deployment:</h5>
+										<h5>Continuous deployment:</h5>
 										<ul>
-											<li>Whereas continuous delivery automates the release code in a production-ready state to the repository, continuous deployment automates releasing an app to production.</li>
+											<li>Whereas continuous delivery automates commiting the code in a production-ready state to the repository, continuous deployment automates releasing an app from the repository to production.</li>
+											<li>It prevents operations teams from getting overloaded by manual processses that slows down app deployment.</li>
+											<li>Fast and automated deployment of developer's change allows getting and incorporatting user feedback much faster.</li>
+										</ul>
+
+										<h5>Continuous monitoring:</h5>
+										<ul>
+											<li>...</li>
 										</ul>
 
 									</header>
@@ -115,7 +126,8 @@
 
 									<h5>Jenkins:</h5>
 									<ul>
-									  <li>...</li>
+									  <li>One of the best open source tool for CICD is Jenkins.</li>
+										<li>Jenkins handles anything from a simple CI server to a complete CD hub.</li>
 									</ul>
 
 								</div>
