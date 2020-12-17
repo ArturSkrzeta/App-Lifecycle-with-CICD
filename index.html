@@ -157,16 +157,46 @@
 									<ul>
 										<li>Text file stroring pipeline as a code.</li>
 										<li>Written using Groovy Domain Specific Language.</li>
-										<li>Can be written in two ways: <b>declarative pipeline</b> or <b>scripted pipeline</b></li>
+										<li>Can be written in two ways: <b>declarative pipeline</b> or <b>scripted pipeline</b>.</li>
 										<li>Declarative pipeline:
 											<br>
 											- code can be writeen locally in a file and pushed to Source Control Management system,<br>
-											- code defined within a pipeline block.
+											- code defined within a pipeline block which contains all the stages.
 										</li>
 										<li>Scripted pipeline:
 											<br>
 											- traditional way where code is written in Jenkins UI,<br>
 											- code diefined within a node block.
+										</li>
+									</ul>
+
+									<h5>Declarative pipelin</h5>
+									<ul>
+										<li>Agent is an executor which runs entire pipeline or a specific stages.</li>
+										<li>Within stages we can declare single stage.</li>
+										<li>Each stage has following steps.</li>
+										<li>Code:
+											<br>
+											<code>pipeline {</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp
+												<code>agent any</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp
+												<code>stages {</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>stage ('Build') {</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+														<code>...</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>}</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>stage ('Test') {</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+														<code>...</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>}</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>stage ('QA') {</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+														<code>...</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>}</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>stage ('Deploy') {</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+														<code>...</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>}</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>stage ('Monitor') {</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+														<code>...</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													<code>}</code><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+												<code>}</code><br>
+											<code>}</code>
 										</li>
 									</ul>
 
