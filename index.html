@@ -46,22 +46,51 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>CICD</h2>
+										<h2>App's Lifecycle with CICD</h2>
 										<h3>Intro</h3>
+
+										<p>CICD is a set of rules, requirements, good practicies and tools for working on software projects.
+												Thanks to CICD, dev team is able assure frequent delivery of certain and tested changes to the code.<br>
+												<br>
+												Modern CICD solutions provide:<br>
+												- continuous integration,<br>
+												- continuous testing,<br>
+												- continuous delivery,<br>
+												- continuous deployment,<br>
+												- continuous monitoring<br>
+												through entire software development lifecycle.<br>
+												<br>
+												CICD is a compromise betweem developers who want to make changes to the code frequently and server admins whose aim is to keep server and application stable.
+												Therefore, CICD ensures easiness of code changes with app stability simultaneously. Automation of delivering changes to the code and automated testing make process of deploying changes to the server fast and reliable.
+										</p>
 
 										<h5>Continuous Integration:</h5>
 										<ul>
-										  <li>...</li>
+											<li>Most of modern apps requires different techonologies when creating a code. This is why dev teams need a mechinizm for integrating an compiling the application.</li>
+										  <li>A good practice is when developers commit their code to version repository frequently - at least one time per day.</li>
+											<li>That smmall chunks of codes are much easier to analyze and debug as opposed to a big block of code.</li>
+										</ul>
+
+										<h5>Continuous Testing:</h5>
+										<ul>
+											<li>Using special frameworks to perform auotmated tests.</li>
+											<li>Testing app or its fragments if they work properly due to assumptions.</li>
+											<li>The most important test is regression testing of whole application in the context of provided changes.</li>
+											<li>Regression testing is basically re-running functional and non-functional tests on the application in order to make sure that recently developed and tested software still performs after a change. If test fails then we have a regression.</li>
+											<li>The best practice is to perform regression tests in local environment before commiting application into remote repository.</li>
 										</ul>
 
 										<h5>Continuous Delivery:</h5>
 										<ul>
-											<li>...</li>
+											<li>It comes when app built, validated and tested out to release the code to a remote repository.</li>
+											<li>It automates process of providing app and inserting code changes into repository.</li>
+											<li>It just makes sure that the app is alwyas in a production-ready state - always ready to be released.</li>
+											<li>Teams, using clodud solutions, deliver their app in containerizated form with Docker or Kubernetes.</li>
 										</ul>
 
 										<h5>Continuous Deployment:</h5>
 										<ul>
-											<li>...</li>
+											<li>Whereas continuous delivery automates the release code in a production-ready state to the repository, continuous deployment automates releasing an app to production.</li>
 										</ul>
 
 									</header>
@@ -74,7 +103,7 @@
 									<h3>Features</h3>
 									<p>App includes following features:</p>
 									<ul class="feature-icons">
-										<li class="icon solid fa-check">GitHub</li>
+										<li class="icon solid fa-check">Jenkins</li>
 									</ul>
 								</div>
 							</section>
@@ -84,14 +113,9 @@
 								<div class="container">
 									<h3>Demo</h3>
 
-									<h5>Git on Windows 10:</h5>
+									<h5>Jenkins:</h5>
 									<ul>
-									  <li>Running Git Bash.</li>
-									</ul>
-
-									<h5>Branches:</h5>
-									<ul>
-									  <li>Commiting changes to project aside without affecting main branch.</li>
+									  <li>...</li>
 									</ul>
 
 								</div>
