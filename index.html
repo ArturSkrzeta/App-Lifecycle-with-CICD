@@ -63,13 +63,13 @@
 												3. Development and testing.<br>
 												4. Implementation.<br>
 												5. Documentation.<br>
-												6. Evaluation and.<br>
+												6. Evaluation.<br>
 												7. Maintenance.<br>
 											</li>
 											<li>CICD tools support software development process.</li>
 										</ul>
 
-										<h5>Modern CICD provides solutions through entire software development lifecycle:</h5>
+										<h5>Modern CICD solutions through entire software development lifecycle:</h5>
 										<ul>
 											<li>continuous integration,</li>
 											<li>continuous testing,</li>
@@ -78,16 +78,25 @@
 											<li>continuous monitoring.</li>
 										</ul>
 
-										<h5>Continuous integration:</h5>
+										<h4>DevOps stages:</h4>
+
+										<h5>1. Version Control:</h5>
 										<ul>
+											<li>Maintaining different versions of code with Version Control System.</li>
+											<li>Managing source code of an application when multiple developers working on it.</li>
+										</ul>
+
+										<h5>2. Continuous integration:</h5>
+										<ul>
+											<li>Building (compiling) the application continuously by pulling the code from repository everytime change to the code commited.</li>
 											<li>Most of modern apps requires different techonologies during development. In addition, multiple developers work simultaneously on different features of the same app. This is why dev teams need a mechinizm for code integration and app compilation.</li>
 										  <li>A good practice is when developers commit their changes to a version repository frequently - at least one time per day.</li>
 											<li>These small chunks of code are much easier to analyze, debug and test it out with unit and integration testing, as opposed to a big block of code.</li>
-											<li>Successfully performed CI means new code changes to an app are regularly built, tested, and merged to a shared repository.</li>
+											<li>Successfully performed CI means new code changes to an app are regularly built, tested, and merged to a shared repository or packed to WAR or JAR package.</li>
 											<li>This is a solution to a common problem of having too many branches of an app from different developers at once which may lead into a confilct.</li>
 										</ul>
 
-										<h5>Continuous testing:</h5>
+										<h5>3. Continuous testing:</h5>
 										<ul>
 											<li>Every time there is a commit from a developer, the app is being pulled from Version Control System, built and tested out using automated tests.</li>
 											<li>The App or its fragments undergoes tests if they work properly due to the set of assumptions.</li>
@@ -96,22 +105,23 @@
 											<li>The best practice is to perform regression tests in local environment before pushing application into a remote repository.</li>
 										</ul>
 
-										<h5>Continuous delivery:</h5>
+										<h5>4. Continuous delivery:</h5>
 										<ul>
 											<li>It comes when app built, validated and tested out to release the code to a remote repository (like GitHub or a container registry).</li>
 											<li>It just makes sure that the app is alwyas in a production-ready state - always ready to be released to a production environment.</li>
 											<li>In ensures smooth and clear communication and workflow between dev teams and operations teams.</li>
 											<li>Teams, using cloud solutions, deliver their app with containerizated by Docker or Kubernetes form.</li>
+											<li>Container replicates the production environment and its image call be push to Docker Hub from where we can run container on production server while deployment.</li>
 										</ul>
 
-										<h5>Continuous deployment:</h5>
+										<h5>5. Continuous deployment:</h5>
 										<ul>
 											<li>Whereas continuous delivery automates commiting the code in a production-ready state to the repository, continuous deployment automates releasing an app from the repository to production.</li>
 											<li>It prevents operations teams from getting overloaded by manual processses that slows down app deployment.</li>
 											<li>Fast and automated deployment of developer's change allows getting and incorporatting user feedback much faster.</li>
 										</ul>
 
-										<h5>Continuous monitoring:</h5>
+										<h5>6. Continuous monitoring:</h5>
 										<ul>
 											<li>...</li>
 										</ul>
@@ -139,6 +149,7 @@
 									<h5>Jenkins Pipeline:</h5>
 									<ul>
 									  <li>One of the best open source tool for CICD is Jenkins.</li>
+										<li>Jenkins provides interface and tools to automate the entire process of software development lifecycle.</li>
 										<li>Jenkins handles anything from a simple CI server to a complete CD hub.</li>
 										<li>Instead of having multiple processes chained together we can put enite workflow in the Jenkins Pipeline.</li>
 										<li>Jenkins Pipeline runs entire job as a code written in one script in Jenkinsfile</li>
