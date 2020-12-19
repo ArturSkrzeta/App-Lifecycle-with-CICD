@@ -94,6 +94,17 @@
 											<li>These small chunks of code are much easier to analyze, debug and test it out with unit and integration testing, as opposed to a big block of code.</li>
 											<li>Successfully performed CI means new code changes to an app are regularly built, tested, and merged to a shared repository or packed to WAR or JAR package.</li>
 											<li>This is a solution to a common problem of having too many branches of an app from different developers at once which may lead into a confilct.</li>
+											<li>Workflow:
+												<br>
+												1. Developers push a commit to GitHub.<br>
+												2. GitHub's webhook notifies Jenkin about commit was made..<br>
+												3. Jenkins pulls the GitHub repository (app's code, test code, Dockerfile).<br>
+												4. Jenkins builds a Docker image on the slave node.<br>
+												5. Jenkins runs the Docker container on the slave node.<br>
+												6. Jenkins executes unit and integration test.<br>
+												7. If tests executed successfully, Docker image is pushed to Docker hub or Docker Trusted Registry.<br>
+												8. Docker Trusted Registry is the place where we can start delivery/deployment from.
+											</li>
 										</ul>
 
 										<h5>3. Continuous testing:</h5>
