@@ -101,7 +101,7 @@
 												3. Jenkins pulls the GitHub repository (app's code, test code, Dockerfile).<br>
 												4. Jenkins builds a Docker image on the slave node.<br>
 												5. Jenkins runs the Docker container on the slave node.<br>
-												6. Jenkins executes unit and integration test.<br>
+												6. Jenkins executes unit and integration tests.<br>
 												7. If tests executed successfully, Docker image is pushed to Docker hub or Docker Trusted Registry.<br>
 												8. Docker Trusted Registry is the place where we can start delivery/deployment from.
 											</li>
@@ -240,11 +240,16 @@
 										</li>
 									</ul>
 
-									<!-- <h5></h5>
+									<h5>Demo:</h5>
 									<ul>
-										<li></li>
-										<li></li>
-									</ul> -->
+										<li>Jenkins pipline encapsulates:
+											<br>
+											1. Cloning Repository (link in source code setcion).<br>
+											2. Building image.<br>
+											3. Pushing image to Docker Hub.<br>
+										</li>
+										<img src="images/jenkinspipeline.JPG">
+									</ul>
 
 								</div>
 							</section>
@@ -269,7 +274,7 @@
 							<section id="five">
 								<div class="container">
 									<h3>Source Code</h3>
-									<p>You can view the source code: <a href="">HERE</a></p>
+									<p>You can view the source code: <a href="https://github.com/ArturSkrzeta/test">HERE</a></p>
 									<p>&nbsp</p>
 								</div>
 							</section>
